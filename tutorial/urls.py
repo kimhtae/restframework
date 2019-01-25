@@ -22,6 +22,13 @@ from quickstart import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'test', views.TestViewSet)
+router.register(r'ABL_UPLOAD_DATA_FUNDPRICE', views.ABL_UPLOAD_DATA_FUNDPRICEViewSet)
+router.register(r'ABL_UPLOAD_DATA_DISTRIBUTORINFO', views.ABL_UPLOAD_DATA_DISTRIBUTORINFOViewSet)
+router.register(r'ABL_UPLOAD_DATA_RISKANALYSIS', views.ABL_UPLOAD_DATA_RISKANALYSISViewSet)
+router.register(r'ABL_UPLOAD_DATA_FUNDPERFORMANCE', views.ABL_UPLOAD_DATA_FUNDPERFORMANCEViewSet)
+router.register(r'ABL_UPLOAD_DATA_HOLDINGTOP5SECTOR', views.ABL_UPLOAD_DATA_HOLDINGTOP5SECTORViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
